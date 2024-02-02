@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     VANTA.NET({
-        el: "#main",
+        el: "body",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
