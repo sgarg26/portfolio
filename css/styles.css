@@ -1,0 +1,10 @@
+@font-face {
+    font-family: IosevkaNF;
+    src:
+        local("IosevkaNF"),
+        url("../assets/IosevkaNerdFont-Medium.ttf")
+}
+
+h1 {
+    font-family: IosevkaNF, sans-serif;
+}
