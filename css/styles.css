@@ -20,8 +20,14 @@ body {
     padding: 10px;
 }
 
+#main {
+    display: flex;
+    border: 1px solid white;
+}
+
 #header {
     height: 100vh;
+    /*border: 1px solid green;*/
     display: grid;
     place-items: center;
 }
@@ -36,16 +42,4 @@ body {
     font-size: 40px;
     color: white;
 }
-
-/*#main-text {
-    font-family: IosevkaNF, sans-serif;
-    white-space: nowrap;
-    color: white;
-    padding: 20px;
-    font-size: 40px;
-    overflow: hidden;
-    border-right: 3px solid;
-    animation:
-        typing 2s, blink .5s step-end infinite alternate;
-}*/
 
