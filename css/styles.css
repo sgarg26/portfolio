@@ -24,18 +24,17 @@ body {
 
 #main {
     display: flex;
-    border: 1px solid white;
 }
 
 #header {
     height: 100vh;
-    /*border: 1px solid green;*/
     display: grid;
     place-items: center;
 }
 
 #main-text {
-    width: 22ch;
+    /*width: 22ch;*/
+    width: 50%;
     animation:
         typing 2s,
         blink 0.5s step-end infinite alternate;
