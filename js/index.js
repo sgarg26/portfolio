@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     VANTA.NET({
-        el: "body",
+        el: "#vanta-bg",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
@@ -10,3 +10,4 @@ document.addEventListener("DOMContentLoaded", () => {
         scaleMobile: 1.00
     })
 })
+

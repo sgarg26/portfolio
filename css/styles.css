@@ -3,45 +3,52 @@
     src: local("IosevkaNF"), url("../assets/IosevkaNerdFont-Medium.ttf");
 }
 
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
+@keyframes blink {
+    from { border-color: transparent }
+    50% { border-color: white }
+}
+
+html {
+    overflow: hidden;
 }
 
 body {
-    overflow: hidden;
-    height: 100vh;
     margin: 0;
-    padding: 10px;
 }
 
-#main {
-    display: flex;
-}
-
-#header {
+#vanta-bg {
+    position: fixed;
+    width: 100vw;
     height: 100vh;
+    z-index: -1;
+}
+
+.container-fluid {
     display: grid;
     place-items: center;
+    height: 100vh;
+    z-index: 2;
+    color: white;
 }
 
-#main-text {
-    /*width: 22ch;*/
-    width: 50%;
-    animation:
-        typing 2s,
-        blink 0.5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
+.display-5 {
+    display: inline-flex;
+    border-right: solid white;
     font-family: IosevkaNF, sans-serif;
-    font-size: 40px;
-    color: white;
+    padding: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation:
+        typing 2s steps(21, end) forwards,
+        blink 1s infinite;
+}
+
+.navbar {
+
 }
