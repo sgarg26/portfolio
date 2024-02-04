@@ -1,3 +1,4 @@
+gsap.registerPlugin(TextPlugin)
 document.addEventListener("DOMContentLoaded", () => {
     VANTA.NET({
         el: "#vanta-bg",
@@ -11,3 +12,4 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 })
 
+gsap.to(".display-5", { duration: 2, text: "Hi, I'm Siddharth Garg", delay: 1 })
