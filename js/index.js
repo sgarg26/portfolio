@@ -1,4 +1,5 @@
 gsap.registerPlugin(TextPlugin);
+
 document.addEventListener("DOMContentLoaded", () => {
     VANTA.NET({
         el: "#vanta-bg",
@@ -12,5 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-gsap.to(".display-5", { duration: 2, text: "Hi, I'm Siddharth Garg" });
-
+let tl = gsap.timeline();
+tl.to(".display-5", { duration: 2, text: "Hi, I'm Siddharth Garg" });
+tl.from(".navbar", {
+    opacity: 0,
+    duration: 2,
+});

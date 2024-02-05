@@ -37,8 +37,10 @@ body {
 }
 
 .container-fluid {
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
     height: 100vh;
     z-index: 2;
     color: white;
@@ -55,6 +57,15 @@ body {
     /*animation:*/
     /*    typing 2s steps(21, end) forwards,*/
     /*    blink 1s infinite;*/
+}
+
+.navbar {
+    border: 1px solid white;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px;
 }
 
 .nav {
