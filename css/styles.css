@@ -30,6 +30,8 @@ body {
 }
 
 #vanta-bg {
+    /*filter: blur(10px);*/
+    /*transform: scale(1.1);*/
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -43,7 +45,7 @@ body {
     flex-direction: column;
     height: 100vh;
     z-index: 2;
-    color: white;
+    color: #FFFFF7;
 }
 
 .display-5 {
@@ -60,11 +62,11 @@ body {
 }
 
 .navbar {
-    border: 1px solid white;
+    /*border: 1px solid white;*/
 }
 
 .navbar a {
-    color: white;
+    color: #FFFFF7;
     padding: 10px;
 }
 

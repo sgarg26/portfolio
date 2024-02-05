@@ -11,11 +11,20 @@ document.addEventListener("DOMContentLoaded", () => {
         scale: 1.0,
         scaleMobile: 1.0,
     });
+    tl.play()
 });
 
-let tl = gsap.timeline();
-tl.to(".display-5", { duration: 2, text: "Hi, I'm Siddharth Garg" });
-tl.from(".navbar", {
-    opacity: 0,
-    duration: 2,
-});
+let tl = gsap.timeline()
+    .to(".display-5", { duration: 1, text: "Hi, I'm Siddharth Garg" })
+    .from(".navbar a", {
+        opacity: 0,
+        duration: 2,
+        stagger: 0.25
+    });
+
+
+const aboutMe = "Welcome to my portfolio! I'm Siddharth Garg, a CS student at George Mason University. " +
+    "My interests lie in crafting code across diverse domains, including robotics and contributing" +
+    " to open source projects."
+
+const 
