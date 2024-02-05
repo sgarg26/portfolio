@@ -26,5 +26,3 @@ let tl = gsap.timeline()
 const aboutMe = "Welcome to my portfolio! I'm Siddharth Garg, a CS student at George Mason University. " +
     "My interests lie in crafting code across diverse domains, including robotics and contributing" +
     " to open source projects."
-
-const 
