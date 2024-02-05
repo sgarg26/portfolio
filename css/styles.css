@@ -57,10 +57,16 @@ body {
     /*    blink 1s infinite;*/
 }
 
-.navbar {
-    background-color: black;
-    width: 100vw;
-    height: 50px;
-    z-index: 2;
+.nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid white;
+    width: auto;
+}
+
+.nav td {
+    border: 1px solid white;
+    padding: 10px;
 }
 
