@@ -70,17 +70,3 @@ body {
     font-family: IosevkaNF, sans-serif;
     padding: 10px;
 }
-
-.nav {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid white;
-    width: auto;
-}
-
-.nav td {
-    border: 1px solid white;
-    padding: 10px;
-}
-
