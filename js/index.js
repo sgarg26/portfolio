@@ -1,9 +1,12 @@
 gsap.registerPlugin(TextPlugin);
 
-document.addEventListener("DOMContentLoaded", () => {
+const DocListener = document.addEventListener
+const ById = document.getElementById
+
+DocListener("DOMContentLoaded", () => {
     VANTA.NET({
         el: "#vanta-bg",
-        mouseControls: true,
+        mouseControls: false,
         touchControls: true,
         gyroControls: false,
         minHeight: 200.0,
@@ -22,7 +25,12 @@ let tl = gsap.timeline()
         stagger: 0.25
     });
 
+const projects = "-> I have worked extensively with creating script based and graphical mods for games like" +
+    "the Witcher 3, and Starfield.\n\n-> I like learning about OS operations and have used Windows Libraries to build a Volume Wheel\n" +
+    "\n-> I'm passionate about tools like Neovim, and have created an extensive configuration using Lua\n" +
+    "   Check out more of my projects on Nexus Mods, and GitHub!"
 
-const aboutMe = "Welcome to my portfolio! I'm Siddharth Garg, a CS student at George Mason University. " +
-    "My interests lie in crafting code across diverse domains, including robotics and contributing" +
-    " to open source projects."
+document.getElementById("projects-link").addEventListener("mouseup", () => {
+    document.getElementsByClassName("modal-body")[0].innerText = projects
+    document.getElementsByClassName("modal-header")[0].innerText = "Projects"
+})
