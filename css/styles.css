@@ -82,6 +82,10 @@ body {
     justify-content: space-between;
 }
 
+.fs-4 {
+    /*border: 1px solid white;*/
+}
+
 .icon-link {
     color: white;
 }
