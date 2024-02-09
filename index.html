@@ -13,49 +13,100 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        />
         <link rel="stylesheet" href="css/styles.css" />
-        <link rel="icon" type="image/png" href="assets/bash_logo.png"/>
+        <link rel="icon" type="image/png" href="assets/bash_logo.png" />
         <title>Siddharth's Portfolio</title>
     </head>
 
     <body>
-        <div class="modal fade" id="optionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div
+            class="modal fade"
+            id="optionModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header border-0">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">About Me</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            About Me
+                        </h1>
                     </div>
                     <div class="modal-body">
-                        Welcome to my portfolio! I'm a CS student at George Mason University.
-                        My interests lie in crafting code across diverse domains, including robotics and contributing
-                        to open source projects.
+                        Welcome to my portfolio! I'm a CS student at George
+                        Mason University. My interests lie in crafting code
+                        across diverse domains, including robotics and
+                        contributing to open source projects.
                     </div>
                     <div class="modal-footer border-0">
                         <div class="fs-4 mb-3">
-                            <a class="text-decoration-none icon-link" href="https://github.com/sgarg26"><i id="github-icon" class="bi bi-github"></i></a>
-                            <a class="text-decoration-none icon-link" href="https://www.nexusmods.com/users/100695708?tab=user+files"><i class="bi bi-controller"></i></a>
+                            <a
+                                class="text-decoration-none icon-link"
+                                target="_blank"
+                                href="https://github.com/sgarg26"
+                                ><i id="github-icon" class="bi bi-github"></i
+                            ></a>
+                            <a
+                                class="text-decoration-none icon-link"
+                                target="_blank"
+                                href="https://www.nexusmods.com/users/100695708?tab=user+files"
+                                ><i class="bi bi-controller"></i
+                            ></a>
                         </div>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container-fluid">
             <div id="vanta-bg"></div>
-                <div class="spacer"></div>
-                <div class="center">
-
-                    <p class="display-5">ihGhtdarSgdaidh GImraH</p>
+            <div class="spacer"></div>
+            <div class="center">
+                <p class="display-5">ihGhtdarSgdaidh GImraH</p>
+            </div>
+            <nav class="navbar">
+                <div class="container">
+                    <a
+                        class="nav-link"
+                        id="about-me-link"
+                        data-bs-target="#optionModal"
+                        data-bs-toggle="modal"
+                        >About Me</a
+                    >
+                    <a
+                        class="nav-link"
+                        id="projects-link"
+                        data-bs-target="#optionModal"
+                        data-bs-toggle="modal"
+                        >Projects</a
+                    >
+                    <a
+                        class="nav-link"
+                        id="socials-link"
+                        data-bs-target="#optionModal"
+                        data-bs-toggle="modal"
+                        >Socials</a
+                    >
+                    <a
+                        class="nav-link"
+                        id="contact-link"
+                        data-bs-target="#optionModal"
+                        data-bs-toggle="modal"
+                        >Contact Me</a
+                    >
                 </div>
-                <nav class="navbar">
-                    <div class="container">
-                        <a class="nav-link" id="about-me-link" data-bs-target="#optionModal" data-bs-toggle="modal">About Me</a>
-                        <a class="nav-link" id="projects-link" data-bs-target="#optionModal" data-bs-toggle="modal">Projects</a>
-                        <a class="nav-link" id="socials-link" data-bs-target="#optionModal" data-bs-toggle="modal">Socials</a>
-                        <a class="nav-link" id="contact-link" data-bs-target="#optionModal" data-bs-toggle="modal">Contact Me</a>
-                    </div>
-                </nav>
+            </nav>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
@@ -69,4 +120,3 @@
         <script src="js/index.js"></script>
     </body>
 </html>
-
