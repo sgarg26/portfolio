@@ -2,6 +2,7 @@ gsap.registerPlugin(TextPlugin);
 
 const DocListener = document.addEventListener;
 const ById = document.getElementById;
+let projectsCarouselShowing = false
 
 DocListener("DOMContentLoaded", () => {
     VANTA.NET({
@@ -35,15 +36,26 @@ const projects =
 const aboutMe = "Welcome to my portfolio! I'm a CS student at George Mason University. My interests " +
     "lie in writing code across diverse domains, including robotics and contributing to open source projects."
 
-document.getElementById("projects-link").addEventListener("mouseup", () => {
-    document.getElementsByClassName("modal-body")[0].innerText = projects
-    document.getElementsByClassName("modal-header")[0].innerText = "Projects"
-    document.getElementsByClassName("fs-4")[0].style.visibility = "visible"
-})
-
 document.getElementById("about-me-link").addEventListener("mouseup", () => {
     document.getElementsByClassName("modal-header")[0].innerText = "About Me"
     document.getElementsByClassName("modal-body")[0].innerText = aboutMe
     document.getElementsByClassName("fs-4")[0].style.visibility = "hidden"
 })
 
+document.getElementById("projects-link").addEventListener("mouseup", () => {
+    const projectsCarousel = document.getElementById("carousel")
+    const main = document.getElementById("main-text")
+    const navbar = document.getElementById("navbar")
+    if (projectsCarouselShowing) {
+        projectsCarousel.style.display = "none"
+        main.style.display = "flex"
+        navbar.style.display = "flex"
+        projectsCarouselShowing = false
+    }
+    else {
+        main.style.display = "none"
+        navbar.style.display = "flex"
+        projectsCarousel.style.display = "flex"
+        projectsCarouselShowing = true
+    }
+})

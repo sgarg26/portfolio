@@ -36,8 +36,7 @@ body {
     z-index: -1;
 }
 
-.container-fluid {
-    backdrop-filter: blur(10px);
+#main {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -62,6 +61,7 @@ body {
 
 .navbar a:hover {
     cursor: pointer;
+    color: lightgray;
 }
 
 #optionModal {
@@ -88,4 +88,23 @@ body {
 
 .icon-link {
     color: white;
+}
+
+#carousel {
+    height: 50vh;
+    width: 80vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+}
+
+.carousel-inner {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item {
+    border: 1px solid black;
 }

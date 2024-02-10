@@ -10,7 +10,5 @@ tl.from(".circle", {
     },
 });
 */
-document.getElementById("trialBtn").addEventListener("click", () => {
-    console.log("clicked");
-});
+
 
