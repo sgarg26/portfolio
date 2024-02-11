@@ -41,21 +41,3 @@ document.getElementById("about-me-link").addEventListener("mouseup", () => {
     document.getElementsByClassName("modal-body")[0].innerText = aboutMe
     document.getElementsByClassName("fs-4")[0].style.visibility = "hidden"
 })
-
-document.getElementById("projects-link").addEventListener("mouseup", () => {
-    const projectsCarousel = document.getElementById("carousel")
-    const main = document.getElementById("main-text")
-    const navbar = document.getElementById("navbar")
-    if (projectsCarouselShowing) {
-        projectsCarousel.style.display = "none"
-        main.style.display = "flex"
-        navbar.style.display = "flex"
-        projectsCarouselShowing = false
-    }
-    else {
-        main.style.display = "none"
-        navbar.style.display = "flex"
-        projectsCarousel.style.display = "flex"
-        projectsCarouselShowing = true
-    }
-})

@@ -45,7 +45,7 @@ body {
     z-index: 2;
     color: #FFFFF7;
 }
-
+ 
 .display-5 {
     display: inline-flex;
     font-family: IosevkaNF, sans-serif;
@@ -88,23 +88,4 @@ body {
 
 .icon-link {
     color: white;
-}
-
-#carousel {
-    height: 50vh;
-    width: 80vh;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background-color: green;
-}
-
-.carousel-inner {
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-}
-
-.carousel-item {
-    border: 1px solid black;
 }

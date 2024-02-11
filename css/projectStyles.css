@@ -1,0 +1,31 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    background-color: #23153c;
+}
+
+#carouselDemo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid white;*/
+    height: 100vh;
+}
+
+.carousel {
+    margin: 0;
+}
+
+.carousel-inner {
+    margin: 0;
+    /*border: 1px solid red;*/
+    height: 40vh;
+}
+
+.carousel-inner > img {
+    width: 100%;
+}
+
+
