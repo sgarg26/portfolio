@@ -64,7 +64,7 @@ body {
     color: lightgray;
 }
 
-#optionModal {
+.modal {
     font-family: IosevkaNF, sans-serif;
     backdrop-filter: blur(10px);
     color: white;
@@ -80,10 +80,6 @@ body {
 .modal-footer {
     display: flex;
     justify-content: space-between;
-}
-
-.fs-4 {
-    /*border: 1px solid white;*/
 }
 
 .icon-link {
