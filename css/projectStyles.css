@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    background-color: #23153c;
+    background-color: #24283b;
+    backdrop-filter: blur(10px);
 }
 
 #carouselDemo {
@@ -14,18 +15,17 @@ body {
     height: 100vh;
 }
 
+img {
+    height: auto;
+}
+
 .carousel {
     margin: 0;
 }
 
 .carousel-inner {
-    margin: 0;
-    /*border: 1px solid red;*/
-    height: 40vh;
+    /*margin: 0;*/
+    border: 1px solid red;
 }
 
-.carousel-inner > img {
-    width: 100%;
-}
-
-
+.
