@@ -2,7 +2,7 @@ gsap.registerPlugin(TextPlugin);
 
 const DocListener = document.addEventListener;
 const ById = document.getElementById;
-let projectsCarouselShowing = false
+let projectsCarouselShowing = false;
 
 DocListener("DOMContentLoaded", () => {
     VANTA.NET({
@@ -33,11 +33,12 @@ const projects =
     "\n-> I'm passionate about tools like Neovim, and have created an extensive configuration using Lua\n" +
     "   Check out more of my projects on Nexus Mods, and GitHub!";
 
-const aboutMe = "Welcome to my portfolio! I'm a CS student at George Mason University. My interests " +
-    "lie in writing code across diverse domains, including robotics and contributing to open source projects."
+const aboutMe =
+    "Welcome to my portfolio! I'm a CS student at George Mason University. My interests " +
+    "lie in writing code across diverse domains, including robotics and contributing to open source projects.";
 
-document.getElementById("about-me-link").addEventListener("mouseup", () => {
-    document.getElementsByClassName("modal-header")[0].innerText = "About Me"
-    document.getElementsByClassName("modal-body")[0].innerText = aboutMe
-    document.getElementsByClassName("fs-4")[0].style.visibility = "hidden"
-})
+// document.getElementById("about-me-link").addEventListener("mouseup", () => {
+//     document.getElementsByClassName("modal-header")[0].innerText = "About Me";
+//     document.getElementsByClassName("modal-body")[0].innerText = aboutMe;
+//     document.getElementsByClassName("fs-4")[0].style.visibility = "hidden";
+// });

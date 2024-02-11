@@ -7,6 +7,12 @@ body {
     backdrop-filter: blur(10px);
 }
 
+.carousel-caption {
+    width: 100vw;
+    border: 1px solid red;
+    left: 0;
+}
+
 #carouselDemo {
     display: flex;
     justify-content: center;
@@ -16,16 +22,9 @@ body {
 }
 
 img {
-    height: auto;
+    /* height: 100vh; */
 }
 
 .carousel {
     margin: 0;
 }
-
-.carousel-inner {
-    /*margin: 0;*/
-    border: 1px solid red;
-}
-
-.
