@@ -22,76 +22,66 @@
         <title>Siddharth's Portfolio</title>
     </head>
     <body>
-        <div class="carousel slide" id="carouselDemo">
-            <div class="carousel-inner container-fluid">
-                <div class="carousel-item active">
-                    <div class="img-container">
-                        <img
-                            src="assets/nvim_profile.png"
-                            alt="lua config picture"
-                            class="w-100 d-block"
-                        />
-                    </div>
-                    <div class="carousel-caption container-fluid">
-                        <h5>Neovim Configuration</h5>
-                        <p>
-                            An extensive and comprehensive Neovim configuration
-                            made to serve as a code editor for a variety of
-                            languages including Python, Java, C/C++, HTML, CSS,
-                            and JavaScript. It comes complete with features like
-                            LSPs and VSCode like snippets. It is easily
-                            extendable for users to add capabilties.
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="img-container container">
-                        <img
-                            src="assets/imm_cam.png"
-                            alt="imm cam picture"
-                            class="w-100 d-block"
-                        />
-                    </div>
-                    <div class="carousel-caption container-fluid">
-                        <h5>Immersive Camera for Witcher 3</h5>
-                        <p>
-                            An update and rework of Immersive Camera with
-                            support for Witcher 3's next generation version. It
-                            uses WitcherScript, a derivative of ActionScript 3,
-                            and changes much of the vanilla camera system in
-                            game.
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item container-fluid">
-                    <p>Bruh what is this slide 3</p>
+        <div id="vanta-bg"></div>
+        <div id="top-bar">
+            <div class="spacer"></div>
+            <h1 class="center">Projects</h1>
+            <div class="return"></div>
+        </div>
+        <div class="container-fluid" id="card-box">
+            <div class="card" style="width: 18rem">
+                <img
+                    src="assets/nvim_profile.png"
+                    class="card-img-top"
+                    alt=""
+                />
+                <div class="card-body">
+                    <h5 class="card-title">Neovim Profile</h5>
+                    <p class="card-text">
+                        I have created an extensive Neovim configuration in Lua
+                        for a great coding experience. It includes support for
+                        languages like Python, Java, JavaScript, C/C++, HTML and
+                        CSS. It is easy to understand, and extend further
+                        according to any users needs.
+                    </p>
                 </div>
             </div>
-            <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselDemo"
-                data-bs-slide="prev"
-            >
-                <span class="carousel-control-prev-icon" id="buttonPrev"></span>
-            </button>
-            <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselDemo"
-                data-bs-slide="next"
-            >
-                <span
-                    class="carousel-control-next-icon green"
-                    id="buttonNext"
-                ></span>
-            </button>
+            <div class="card" style="width: 18rem">
+                <img src="assets/imm_cam.png" class="card-img-top" alt="" />
+                <div class="card-body">
+                    <h5 class="card-title">Immersive Camera</h5>
+                    <p class="card-text">
+                        A next-gen update (and rework) of the popular Immersive
+                        Camera mod, which overhauls much of the camera system in
+                        The Witcher 3. It is written in WitcherScript, a
+                        derivative of ActionScript 3. Fully compatible for
+                        version 4.04+ and includes the optional Immersive
+                        Meditation as well.
+                    </p>
+                </div>
+            </div>
         </div>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"
         ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+        <script>
+            // No point making another js file for one item.
+            document.addEventListener("DOMContentLoaded", () => {
+                VANTA.NET({
+                    el: "#vanta-bg",
+                    mouseControls: false,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.0,
+                    minWidth: 200.0,
+                    scale: 1.0,
+                    scaleMobile: 1.0,
+                });
+            });
+        </script>
     </body>
 </html>
-
