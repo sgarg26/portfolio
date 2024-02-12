@@ -44,7 +44,7 @@ body {
     height: 100vh;
     z-index: 2;
     color: #FFFFF7;
-}
+}   
  
 .display-5 {
     display: inline-flex;
@@ -84,4 +84,10 @@ body {
 
 .icon-link {
     color: white;
+}
+
+#contactsModalBody {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
