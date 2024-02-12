@@ -1,5 +1,11 @@
 # Portfolio
 
+## Link to Portfolio
+
+i. [Link to portfolio] (sgarg26.github.io/portfolio/)
+
+ii. [Link to repo] (https://github.com/sgarg26/portfolio)
+
 ## Extra Credit and Sources
 
 i. Used [Vanta.js](https://www.vantajs.com/?effect=net) to include a 3D background
