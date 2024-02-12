@@ -2,9 +2,9 @@
 
 ## Link to Portfolio
 
-i. [Link to portfolio] (sgarg26.github.io/portfolio/)
+i. [Link to portfolio](sgarg26.github.io/portfolio/)
 
-ii. [Link to repo] (https://github.com/sgarg26/portfolio)
+ii. [Link to repo](https://github.com/sgarg26/portfolio)
 
 ## Extra Credit and Sources
 
